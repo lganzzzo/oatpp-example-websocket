@@ -6,7 +6,7 @@
 #define MY_PROJECT_MYSOCKETLISTENER_HPP
 
 #include "oatpp-websocket/ConnectionHandler.hpp"
-#include "oatpp-websocket/Websocket.hpp"
+#include "oatpp-websocket/WebSocket.hpp"
 
 #include "oatpp/core/data/stream/ChunkedBuffer.hpp"
 
