@@ -58,7 +58,7 @@ public:
    *  Called when socket is created
    */
   void onAfterCreate(const oatpp::websocket::WebSocket& socket) override {
-    OATPP_LOGD(TAG, "New incomming connection");
+    OATPP_LOGD(TAG, "New incomming connection %d", &socket);
     
     // set listener
     socket.setListener(std::make_shared<MySocketListener>());
@@ -68,7 +68,7 @@ public:
    *  Called before socket instance is destroyed.
    */
   void onBeforeDestroy(const oatpp::websocket::WebSocket& socket) override {
-    OATPP_LOGD(TAG, "Closing connection");
+    OATPP_LOGD(TAG, "Closing connection %d", &socket);
   }
 
 };
