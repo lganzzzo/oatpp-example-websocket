@@ -1,3 +1,9 @@
+ATTENTION
+
+This example is outdated.
+Instead see:
+https://github.com/oatpp/example-websocket
+
 # Websocket echo server
 
 Example of multithreaded WebSocket echo server implemented with oatpp simple APIs.
